@@ -1,0 +1,335 @@
+
+#deck_main
+{
+    width:99.17vw;
+	height:98.4vh;
+    
+	background-image:url('Background.jpg');
+	background-size:99.17vw 98.4vh;
+	
+	font-family:'Goyang', Goyang;
+    
+    position:absolute;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_exit {
+    background: url( "Deck_Exit.png" ) no-repeat;
+    background-size : 100% 100%;
+    
+    border: none;
+    
+    width:3vw;
+    height:3vw;
+    
+    margin-left:1.8vw;
+    margin-top:1.8vw;
+    
+    position:absolute;
+    
+    cursor: pointer;
+}
+
+#deck_cardlist_exit {
+    background: url( "Deck_Cardlist_Exit.png" ) no-repeat;
+    background-size : 100% 100%;
+    
+    border: none;
+    
+    width:3.5vw;
+    height:3.5vw;
+    
+    margin-left:1.8vw;
+    margin-top:1.8vw;
+    
+    position:absolute;
+    
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.field_slot {
+    width:10vw;
+    height:10vw;
+}
+
+.field_slot:hover {
+    background-color:crimson;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Battle_Hero_atk
+{
+    font-size:1.7em;
+    color:white;
+    
+    margin-left:-5.2vw;
+    margin-top:15.7vh;
+    
+    width:2.5vw;
+    
+    position: absolute;
+    
+    text-align: center;
+}
+
+.Battle_Hero_hp
+{
+    font-size:1.7em;
+    color:white;
+    
+    margin-left:2.3vw;
+    margin-top:15.7vh;
+    
+    width:3vw;
+    
+    position: absolute;
+    
+    text-align: center;
+}
+
+.Battle_Hero_Cost
+{
+    width:1.1vw;
+    
+    margin-left:-0.535vw;
+    margin-top:15.7vh;
+    
+    font-size:1.6em;
+    color:black;
+    
+    position:absolute;
+    
+    text-align: center;
+    
+}
+
+.Battle_Hero_Img {
+    width:10vw;
+    height:10vw;
+    
+    margin-left:-5vw;
+    
+    position:absolute;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.Card_Hero_atk
+{
+    font-size:2.5em;
+    color:white;
+    
+    margin-left:-14.4vw;
+    margin-top:12.2vw;
+    
+    width:2.5vw;
+    
+    position: absolute;
+    
+    text-align: center;
+}
+
+.Card_Hero_hp
+{
+    font-size:2.5em;
+    color:white;
+    
+    margin-left:-3.2vw;
+    margin-top:12.2vw;
+    
+    width:3vw;
+    
+    position: absolute;
+    
+    text-align: center;
+}
+
+.Card_Hero_Cost
+{
+    width:2.5vw;
+    
+    margin-left:-8.7vw;
+    margin-top:12.2vw;
+    
+    font-size:2.6em;
+    color:black;
+    
+    position:absolute;
+    
+    text-align: center;
+}
+
+.Cardlist_Img {
+    width:15vw;
+    height:15vw;
+}
+
+.Cardlist_Img:hover {
+    cursor: pointer;
+    border:3px solid crimson;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_field_back {
+    width:83vw;
+    height:27.5vw;
+    
+    margin-left:5vw;
+	margin-top:16.5vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+    
+    background-color:gray;
+	 
+    border:3px solid black;
+    border-radius:8px;
+    
+    opacity:0.6;
+}
+
+
+#deck_field {
+    width:79vw;
+    height:21vw;
+    
+	margin-left:7vw;
+	margin-top:22.5vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_cardlist_back {
+    width:85vw;
+    height:90vh;
+    
+    margin-left:7.5vw;
+	margin-top:5vh;
+    	
+	position:absolute;
+	  
+    background-color:gray;
+	 
+    border:5px solid darkslateblue;
+    border-radius:8px;
+    
+    opacity:0.75;
+}
+
+#deck_cardlist {
+    width:70vw;
+    height:80vh;
+    
+	margin-left:12vw;
+	margin-top:10vh;
+	
+	position:absolute;
+	
+	text-align:center;
+    
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_spec_back {
+    
+    width : 10vw;
+    height : 9vw;
+    
+    margin-left:88.5vw;
+    margin-top:23.8vw;
+            
+    position: absolute;
+    
+    opacity:0.9;
+    
+    background-color:#16153A;
+    
+}
+
+#deck_spec {
+    
+    width : 7.2vw;
+    height : 6.2vw;
+    
+    margin-left:89.5vw;
+    margin-top:24.8vw;
+            
+    position: absolute;
+    
+    opacity:0.7;
+    
+    color:white;
+    
+    background-color:#2B2B2C;
+    
+    font-size:1.3em;
+    
+    padding:0.5vw;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_reset_back {
+    
+    width : 10vw;
+    height : 3.52vw;
+    
+    margin-left:88.5vw;
+    margin-top:32.5vw;
+            
+    position: absolute;
+    
+    opacity:0.9;
+    
+    background-color:#16153A;
+    
+}
+
+#deck_reset {
+    
+    width : 7.2vw;
+    height : 1.7vw;
+    
+    margin-left:89.5vw;
+    margin-top:33vw;
+            
+    position: absolute;
+    
+    opacity:0.7;
+    
+    color:white;
+    
+    background-color:#2B2B2C;
+    
+    font-size:2em;
+    
+    padding:0.5vw;
+    
+    text-align:center;
+}
+
+#deck_reset:hover {
+    background-color:red;
+}

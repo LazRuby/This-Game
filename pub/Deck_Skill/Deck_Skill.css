@@ -1,0 +1,189 @@
+
+#deck_skill_main
+{
+    width:99.17vw;
+	height:98.4vh;
+    
+	background-image:url('Background.jpg');
+	background-size:99.17vw 98.4vh;
+	
+	font-family:'Goyang', Goyang;
+    
+    position:absolute;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_skill_exit {
+    background: url( "Deck_Skill_Exit.png" ) no-repeat;
+    background-size : 100% 100%;
+    
+    border: none;
+    
+    width:3vw;
+    height:3vw;
+    
+    margin-left:1.8vw;
+    margin-top:1.8vw;
+    
+    position:absolute;
+    
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_skill_field_back {
+    width:80vw;
+    height:37.5vh;
+    
+    margin-left:7.5vw;
+	margin-top:6vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+    
+    background-color:gray;
+	 
+    border:3px solid black;
+    border-radius:8px;
+    
+    opacity:0.6;
+}
+
+#deck_skill_field {
+    width:75vw;
+    height:31vh;
+    
+	margin-left:8.5vw;
+	margin-top:12vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+    
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_skill_cardlist_back {
+    width:55vw;
+    height:38vh;
+    
+    margin-left:7.5vw;
+	margin-top:52.5vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+    
+    background-color:gray;
+	 
+    border:3px solid black; 
+    border-radius:8px;
+    
+    opacity:0.6;
+}
+
+#deck_skill_cardlist {
+    width:50vw;
+    height:30vh;
+    
+	margin-left:10vw;
+	margin-top:56.5vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+    
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#deck_skill_cardlist_detail_back {
+    width:27vw;
+    height:47vh;
+    
+	margin-left:65.5vw;
+	margin-top:45.5vh;
+	  
+    background-color:gray;
+	 
+    border:3px solid black; 
+    border-radius:8px;
+    
+    opacity:0.6;
+    
+    position:absolute; 
+}
+
+#deck_skill_cardlist_detail {
+    width:23vw;
+    height:45vh;
+    
+	margin-left:66.5vw;
+	margin-top:46vh;
+    	
+	position:absolute;
+	
+	text-align:center;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+img {
+    display:inline;
+}
+
+.deck_skill_img {
+    width:10vw;
+    height:12vw;
+}
+
+.deck_skill_img:hover {
+    background-color:cadetblue;
+}
+
+.detail_img {
+    width:21vw;
+    height:25vw;
+}
+
+.deck_skill_cost {
+    font-size : 2em;
+    color : brown;
+    
+    margin-left:-9.2vw;
+    margin-top:0.5vw;
+    
+    position:absolute;
+}
+
+.deck_skill_div {
+    width:10vw;
+    height:12vw;
+    
+    display:inline;
+}
+
+.deck_skill_cost2 {
+    font-size : 4.5em;
+    color : brown;
+    
+    margin-left:-19.2vw;
+    margin-top:1.3vw;
+    
+    position:absolute;
+}
+
+.deck_skill_img:hover ~ .deck_skill_cost {}

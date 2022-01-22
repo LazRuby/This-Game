@@ -1,0 +1,989 @@
+@font-face {
+          font-family: goyang;
+          src: url('./Goyang.ttf');
+        }
+#back_img{
+            position: absolute;
+            top:0;
+            left: 0;
+            z-index:-5;
+            width:105%;
+            height:190%;
+            margin-top:-7%;
+            margin-left:-1%;
+            background:url("./board/toke.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+        }
+
+		tr, th{
+			border:1px solid black;
+		}
+		#ground, #board{
+			position: relative;
+		}
+		#board{
+			float : left;
+			left:5%;
+			position: relative;
+			width:80%;
+			height:80%;
+            background-color:rgba(102,102,102,0.9);
+		}
+		#board tr th{
+			position: relative;
+			width:90px;
+			height:110px;
+		}
+		#board tr th img{
+			position: absolute;
+			top:0;
+			left: 0;
+			margin:0 auto;
+			height: 100%;
+			width: 100%; 
+			z-index: 1;
+		}
+		#cutton{
+			position: absolute;
+			z-index:5;
+			top:0;
+			left: 0;
+			width:100%;
+			height: :100%;
+		}
+		#show{
+			position:relative;
+			z-index:6;
+		}
+		#hero{
+			position: absolute;
+			top:0;
+			left: 0;
+			width:40%;
+			height: 68%;
+			z-index:7;
+		}
+		#rival{
+			position: absolute;
+			top:0;
+			left: 60%;
+			width:40%;
+			height: 68%;
+			z-index:7;
+		}
+		#yaru{
+			position: absolute;
+			top:10%;
+			left:45%;
+			z-index:7;
+		}
+		th:hover{
+			background-color: yellow;
+		}
+		.mirai{
+			background-color: green;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            display:none;
+            position:absolute;
+            top:0;
+            left:0;
+		}
+		.mirai:hover{
+			background-color: blue;
+		}
+		#ghp{
+			position:absolute;
+			z-index: 8;  
+			top:69%;
+			color:white;
+			font-weight: bold;
+		}
+		#ghp2{
+			position:absolute;
+			z-index: 8;  
+			top:69%;
+			left:60%;
+			color:white;
+			font-weight: bold;
+		}
+		#edel{
+			background-color:#7FFFD4;
+			opacity:0.8; 
+		}
+		#edel:hover{
+			background-color: pink;
+		}
+		#rdel{
+			background-color:#7FFFD4;
+			opacity:0.8; 
+		}
+		#rdel:hover{
+			background-color: pink;
+		}
+		.cup{
+			width:35%;
+			height:15%:
+			background-color:blue;
+			position:absolute;
+			z-index: 7;  
+			top:69%;
+			border:1px solid white;
+		}
+		.cup:hover{
+			background-color: pink;
+		}
+		.cup2{
+			width:35%;
+			height:15%:
+			background-color:blue;
+			position:absolute;
+			z-index: 7;  
+			top:69%;
+			left:60%;
+			border:1px solid white;
+		}
+		.cup2:hover{
+			background-color: pink;
+		}
+		.gaze{
+			position: absolute;
+			width:80%;
+			height:100%;
+			background-color:red;
+			top:0; 
+		}
+		.gaze2{
+			position: absolute;
+			width:80%;
+			height:100%;
+			background-color:red;
+			top:0;
+			 
+		}
+        #you_deck{
+			left:8%;
+			position: relative;
+			height: 5%;
+            
+		}
+		#you_deck img{
+			position: relative;
+			float:left;
+			width:9%;
+			height:150px;
+			padding:0.5%;
+		}
+		#my_deck{
+			position: absolute;
+			height: 5%;
+			z-index: 2;
+			top:152%;
+			
+		}
+		#my_deck img{
+			position: relative;
+			float:left;
+			width:9%;
+			height:150px;
+			padding:0.5%;
+		}
+        #my_deck a{
+			position: absolute;
+			z-index: 5;
+			float: left;
+			color:#FF4500;
+			margin-left: -78.78%;
+			margin-top:0.9%;
+			font-weight: bold;
+			font-size : 120%;
+		}
+		#status{
+			left: 5%;
+			position: relative;
+			float:left;
+			width:10%;
+		}
+		.line{
+			position: relative;
+			float:left;
+			width:100%;
+		}
+		table tr th div{
+			position: relative;
+			top:25%;
+		}
+		table tr th div a{
+			font-size: 0.7px;
+		}
+		#tend{
+			float:right;
+			width : 10%;
+			color:blue;
+			height: 40%;
+			font-size:130%;
+			padding : 2%;
+			background: rgb(255,182,193);
+			border-radius: 50%;
+			margin-right:2%;
+			margin-top:7.5%; 
+		}
+		#tend:hover{
+			background: yellow;
+			color:red;
+		}
+		#rcost{
+			position: absolute;
+			margin-top:3%;
+			margin-left:3%;
+			width:9%;
+		}
+		#bcost{
+			float: left;
+			position: absolute;
+			top:157%;
+			left:83%;
+			width:9%;
+			z-index: 1;
+		}
+        #chcard{
+			float:right;
+			width : 6%;
+			color:blue;
+			height: 55%;
+			font-size:100%;
+			padding : 2%;
+			background: rgb(255,182,193);
+			border-radius: 50%;
+			margin-right:-8%;
+			margin-top:17%; 
+		}
+		#chcard:hover{
+			background: yellow;
+			color:red;
+		}
+        #bigroom{
+			background-color: #F0F8FF;
+			position: relative;
+			width:1000px;
+			height:620px;
+			margin: 0 auto;
+			margin-top:30px;
+		}
+		#menu{
+			background-color: #FFD700;
+			width : 100%;
+			height : 8%;
+		}
+		#mit{
+			width : 98%;
+			height : 30%;
+		}
+		#profile{
+			float: left;
+			background-color: #40E0D0;
+			width : 20%;
+			height : 100%;
+		}
+		#cfield{
+			float: left;
+			background-color: #00FFFF;
+			width : 80%;
+			height : 100%;
+		}
+		.menu_e{
+			float:left;
+			background-color: #FFA500;
+			color : #FAFAD2;
+			margin-top:0.8%;
+			margin-left:1%;
+			padding:0.5%;
+			font-weight: bold;
+		}
+		.menu_e:hover{
+			background-color: #FAFAD2;
+			color : #FFA500;
+			font-size:120%;
+			margin-bottom:0.4%;
+		}
+		#cre_room{
+			position: absolute;
+			z-index: 5;
+			margin:0 auto;
+			top:24%;
+			left:39%;
+			display:none; 
+			background-color: #000080; 
+			width:22%; 
+			margin:0 auto; 
+			box-shadow: 0px 0px 40px 5px rgba(102, 186, 255, 0.4);
+			border-radius: 7px;
+		}
+		.done_room{
+			float:left; 
+			width:40%; 
+			height:20%; 
+			background-image: url('./board/Wait.png'); 
+			border-radius: 10%; 
+			margin-left:4%; 
+			margin-top:1%; 
+			box-shadow: 10px 10px 20px 5px gray;
+		}
+		.done_room a{
+			font-weight: bold; 
+			font-size:130%; 
+			margin-top: 10%; 
+			margin-left: 5%;
+		}
+    
+        #ready{
+			position: absolute;
+			z-index:6;
+			width:35%; 
+			height:58%; 
+			margin-top: -27%;
+			background-color: #2F4F4F;
+			opacity:0.8; 
+		}
+		#ready a{
+			position: absolute;
+			margin-left: -12%;
+            margin-top:20%;
+			font-size: 240%;
+			color: #FF4500;
+		}
+        #invite_room{
+            background-color: #ADD8E6;
+            z-index: 5;
+			margin:0 auto;
+			top:24%;
+			left:39%;
+            position: absolute;
+            width:20%;
+            height:40%;
+        }
+        #invite_list{
+            background-color: #F0E68C;
+            width:100%;
+            height:80%;
+            overflow-y: auto;
+        }
+        .currplayer{
+            width:100%;
+        }
+        .sturn{
+			background:url("./board/sturn.gif");
+			background-size: cover;
+			background-repeat: no-repeat;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:1;
+            position:absolute;
+            top:0;
+            left:0;
+		}
+		.kaminari{
+			background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+		}
+        .erabi{
+            background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        #myd_block{
+			position: absolute;
+			height: 5%;
+			z-index: 2;
+			top:152%;
+		}
+		
+		#myd_block img{
+			position: relative;
+			float:left;
+			width:9%;
+			height:150px;
+			padding:0.5%;
+			z-index: 3;
+			opacity:0.6;
+		}
+        #big_card{
+			position : absolute;
+			width:20%;
+			height: 55%;
+			z-index : 2;
+            margin-top:14%; 
+		}
+		#bigc_img{
+			position : absolute;
+			width:100%;
+			height: 100%;
+            top:80%;
+		}
+        .rpsta{
+            position:absolute;
+            z-index:2;
+            width:100%;
+            color:white;
+            margin-top:44.5%;
+        }
+        .rpsta .p_hp{
+            margin-top: -1.5%;
+            margin-right: 3%;
+            font-size: 0.7em;
+            float: right;
+            width:15%;
+        }
+        .rpsta .p_attack{
+            margin-left:4.5%;
+            font-size: 0.7em;
+            float: left;
+            width:15%;
+        }
+        .rpsta .p_pro{
+        	position: absolute;
+        	background-size: cover;
+        	background-repeat: no-repeat;
+        	width: 20px;
+        	height: 16px;
+        	margin-left:43.65%;
+        	margin-top:-4.5%;
+        }
+        .bpsta{
+            position:absolute;
+            z-index:2;
+            width:100%;
+            color:white;
+            margin-top:44.5%;
+        }
+        .bpsta .p_hp{
+            margin-top: -1.5%;
+            margin-right: 3%;
+            font-size: 0.7em;
+            float: right;
+            width:15%;
+        }
+        .bpsta .p_attack{
+            margin-left:4.5%;
+            font-size: 0.7em;
+            float: left;
+            width:15%;
+        }
+        .bpsta .p_pro{
+        	position: absolute;
+        	background-size: cover;
+        	background-repeat: no-repeat;
+        	width: 20px;
+        	height: 16px;
+        	margin-left:43.65%;
+        	margin-top:-4.5%;
+        }
+        #sikaba{
+			position: absolute;
+			background-color:#2F4F4F;
+			width:70%;
+			height: 50%;
+			z-index: 5;
+            display: none;
+		}
+        .semetory{
+			background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+		}
+        #silkhat{
+			position: absolute;
+			background-color:#228B22;
+			z-index: 5;
+			margin-top: 15%;
+			margin-left: 5%;
+		}
+        .armor{
+            background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+     
+		input[type=range] {
+		  -webkit-appearance: none;
+		  margin: 18px 0;
+		  width: 100%;
+		}
+		input[type=range]:focus {
+		  outline: none;
+		}
+		input[type=range]::-webkit-slider-runnable-track {
+		  width: 100%;
+		  height: 8.4px;
+		  cursor: pointer;
+		  animate: 0.2s;
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  background: #FFFF00;
+		  border-radius: 1.3px;
+		  border: 0.2px solid #010101;
+		}
+		input[type=range]::-webkit-slider-thumb {
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  border: 1px solid #000000;
+		  height: 36px;
+		  width: 16px;
+		  border-radius: 3px;
+		  background: #9ACD32;
+		  cursor: pointer;
+		  -webkit-appearance: none;
+		  margin-top: -14px;
+		}
+		input[type=range]:focus::-webkit-slider-runnable-track {
+		  background: ##FFFF00;
+		}
+		input[type=range]::-moz-range-track {
+		  width: 100%;
+		  height: 8.4px;
+		  cursor: pointer;
+		  animate: 0.2s;
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  background: #3071a9;
+		  border-radius: 1.3px;
+		  border: 0.2px solid #010101;
+		}
+		input[type=range]::-moz-range-thumb {
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  border: 1px solid #000000;
+		  height: 36px;
+		  width: 16px;
+		  border-radius: 3px;
+		  background: #ffffff;
+		  cursor: pointer;
+		}
+		input[type=range]::-ms-track {
+		  width: 100%;
+		  height: 8.4px;
+		  cursor: pointer;
+		  animate: 0.2s;
+		  background: transparent;
+		  border-color: transparent;
+		  border-width: 16px 0;
+		  color: transparent;
+		}
+		input[type=range]::-ms-fill-lower {
+		  background: #2a6495;
+		  border: 0.2px solid #010101;
+		  border-radius: 2.6px;
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		}
+		input[type=range]::-ms-fill-upper {
+		  background: #3071a9;
+		  border: 0.2px solid #010101;
+		  border-radius: 2.6px;
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		}
+		input[type=range]::-ms-thumb {
+		  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+		  border: 1px solid #000000;
+		  height: 36px;
+		  width: 16px;
+		  border-radius: 3px;
+		  background: #ffffff;
+		  cursor: pointer;
+		}
+		input[type=range]:focus::-ms-fill-lower {
+		  background: #3071a9;
+		}
+		input[type=range]:focus::-ms-fill-upper {
+		  background: #367ebd;
+		}
+        .change_ha{
+            background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        .set_obstacle{
+            background-color: #7FFFD4;
+            width:100%; 
+            height:100%;
+            opacity:0.6;
+            z-index:2;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+        
+        #set_arrow{
+            position:absolute;
+            z-index:5;
+			top:0;
+			left: 0;
+			width:100%;
+			height:150%;
+            background-color:#A9A9A9;
+        }
+        #set_arrow img{
+            position:absolute;
+            width:10%;
+            height:10%;
+        }
+        
+        #upper_arrow{
+            margin-top:5%;
+            margin-left:45%;
+        }
+        #lefter_arrow{
+            margin-top:20%;
+            margin-left:30%;
+        }
+        #righter_arrow{
+            margin-top:20%;
+            margin-left:60%;
+        }
+        #downfer_arrow{
+            margin-top:35%;
+            margin-left:45%;
+        }
+        
+        #set_arrow2{
+            position:absolute;
+            z-index:5;
+			top:0;
+			left: 0;
+			width:100%;
+			height:150%;
+            background-color:#A9A9A9;
+        }
+        #set_arrow2 img{
+            position:absolute;
+            width:10%;
+            height:10%;
+        }
+        
+        #upper_arrow2{
+            margin-top:5%;
+            margin-left:45%;
+        }
+        #lefter_arrow2{
+            margin-top:20%;
+            margin-left:30%;
+        }
+        #righter_arrow2{
+            margin-top:20%;
+            margin-left:60%;
+        }
+        #downfer_arrow2{
+            margin-top:35%;
+            margin-left:45%;
+        }
+
+        #info_menu_back {
+    
+    width : 10vw;
+    height : 3vw;
+    
+    margin-left:88.3vw;
+    margin-top:1vw;
+            
+    position: absolute;
+
+    color:white;
+    
+    background-color:#16153A;
+    
+    opacity:0.6;
+}
+
+#info_menu {
+    
+    width : 9vw;
+    height : 2vw;
+    
+    margin-left:88.8vw;
+    margin-top:1.5vw;
+            
+    position: absolute;
+
+    color:white;
+    
+    background-color:#2B2B2C;
+    
+    text-align: center;
+    
+    opacity:0.8;
+}
+
+.info_in {
+    
+    width:3.5vw;
+    height:2.5vw;
+    
+    display: inline-block;
+    
+    color:white;
+    
+    font-size:1.5em;
+    
+    text-align: center;
+}
+
+.info_in:hover {
+    font-size:1.7em;
+    cursor:crosshair;
+}
+
+#main_view {     
+    width:99vw;
+	height:99vh;
+    
+    position: absolute;
+}
+
+#map {
+    width:99vw;
+	height:99vh;
+    
+    position: absolute;
+    
+}
+
+.map_img_class {
+    width:99vw;
+	height:99vh;
+    
+    position: absolute;
+}
+
+#waitroom_back {
+    width : 55vw;
+    height : 51vh;
+    
+    margin-left:21.21vw;
+    margin-top:3.51vw;
+    
+    position: absolute;
+    
+    background-color:gray;
+    
+    opacity:0.6;
+}
+
+#waitroom {
+    width : 55vw;
+    height : 51vh;
+    
+    margin-left:21.2vw;
+    margin-top:3.5vw;
+    
+    position: absolute;
+    
+    opacity:0.9;
+    
+    border:5px gray double;
+}
+
+#mit_back {
+    
+    width : 10vw;
+    height : 19.5vw;
+    
+    margin-left:88.5vw;
+    margin-top:4.8vw;
+            
+    position: absolute;
+    
+    opacity:0.9;
+    
+    background-color:#16153A;
+    
+}
+
+#mit {
+    
+    width : 8vw;
+    height : 17.5vw;
+    
+    margin-left:89.5vw;
+    margin-top:5.8vw;
+            
+    position: absolute;
+    
+    opacity:0.7;
+    
+    color:white;
+    
+    background-color:#2B2B2C;
+}
+
+#cfield {
+    width : 55vw;
+    height : 51vh;
+    
+    margin-left:21.2vw;
+    margin-top:3.5vw;
+    
+    position: absolute;
+     
+    border:5px white double;
+    
+    background-color:#0E0E0E;
+}
+
+.mapmouseover {
+    cursor:crosshair;
+}
+
+.ready_room_name {
+    
+    width:60%;
+    
+    padding:4% 4% 4% 4%;
+    
+    text-align: center;
+    
+    background-image:url('board/Name_Back.png');
+    background-size:100% 100%;
+    
+    display: inline-block;
+    
+    margin-left: 5%;
+    margin:0 auto;
+    
+}
+
+#invite_room {
+
+    z-index: 5;margin:0 auto;
+    top:24%;
+    left:39%;
+    position: absolute;
+    width:20%;
+    height:40%;
+    
+    border-radius: 7px;
+}
+
+#invite_list {
+    background-color: white;
+    width:100%;
+    height:80%;
+    overflow-y: auto;
+    
+    border-radius: 7px;
+}
+
+#black_eft {
+
+    width:99.17vw;
+	height:98.4vh;
+    
+	background-color:gray;
+	
+    opacity:0.8;
+    
+    position:absolute;
+}
+
+#mouseover_total_id {
+    width : 26vw;
+    height : 7vh;
+    
+    margin-left:36vw;
+    margin-top:60vh;
+    
+    position: absolute;
+    
+    background-color:gray;
+    
+    opacity:0.6;
+    font-size: 80%;
+    text-align:center;
+}
+
+.mouseover_text {
+
+    left:0; right:0; margin-left:auto; margin-right:auto;
+	top:0; bottom:0; margin-top:auto; margin-bottom:auto;
+    
+    position: absolute;
+    
+    opacity:0.9;
+    
+    border:6px white double;
+    
+    background-color:black;
+    
+    color:white;
+    
+    font-size:2em;
+    
+    text-align:center;
+    
+    
+}
+#deck_spec{
+    font-size:80%;
+}
+#deck_reset{
+    font-size:120%;
+    text-align:center;
+}
+#deck_skill_reset{
+    font-size:150%;
+    text-align:center;
+}
+        
+		::-webkit-scrollbar{width: 16px;}
+		::-webkit-scrollbar-track {background-color:#f1f1f1;}
+		::-webkit-scrollbar-thumb {background-color:#f1ef79;border-radius: 10px;}
+		::-webkit-scrollbar-thumb:hover {background: #555;}
+		::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment {
+		width:16px;height:16px;background:#f1ef79;}
+
+
+
+#setting{
+			position: absolute;
+			background-color:black;
+			z-index: 5;
+			margin-left: 30%;
+			margin-top: 10%;
+			width:40%;
+			height: 20%;
+			color:white;
+		}
+
+#setting_back{
+			position: absolute;
+			background-color:white;
+			z-index: 5;
+			margin-left: 28%;
+			margin-top: 8%;
+			width:44%;
+			height: 22%;
+		}
