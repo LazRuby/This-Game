@@ -6,6 +6,7 @@
 기간 : 2018년 06월 02일 ~ 2018년 12월 15일 (6개월)
 
 개발 환경 : 
+
      DBMS : MySQL 8.0.20
      Develop Tool : Brackets
      OS : Windows
